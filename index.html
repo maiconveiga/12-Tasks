@@ -11,17 +11,23 @@
 </head>
 <body>
     <header>
-
-    </header>
-    <main>
-        <div class="container">
-            <h1>Lista de tarefas</h1>
+        <h1>Lista de tarefas</h1>
             <form>
                 <input type="text" id="tarefa" required placeholder="Nova tarefa"/>
+                <input type="date" id="data" required placeholder="Deadline"/>
                 <button type="submit">Cadastrar</button>
             </form>
+    </header>
+    <main>
+        <div class="cmds">
+            <button id="doneall">Concluir todos</button>
+            <button id="resetall">Resetar todos</button>
+        </div>
+
+        <div class="container">
             <div class="listContainer">
                 <ul id="lista">
+
                 </ul>
             </div>
         </div>

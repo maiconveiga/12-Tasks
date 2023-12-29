@@ -10,8 +10,13 @@ body{
     padding: 0;
 }
 
+header{
+    border-bottom: solid black 2px;
+    background-color: aqua;
+}
+
 .container{
-    margin-top: 100px;
+    margin-top: 10px;
 }
 h1{
     text-align: center;
@@ -19,10 +24,11 @@ h1{
 }
 form{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 form > input, button{
     padding: 10px;
+    border-radius: 10px;
 }
 button{
     font-weight: bold;
@@ -40,3 +46,37 @@ ul{
     
 }
 
+li{
+    list-style-type: decimal;
+    display: flex;
+}
+
+.cmds{
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+#doneall{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+#resetall{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#doneall:hover{
+    background-color: white;
+    color: green;
+    cursor: pointer;
+}
+
+#resetall:hover{
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}

@@ -8,9 +8,10 @@ $(document).ready(function(){
     $('form').on('submit', function(e){
         e.preventDefault();
         const atividade = $('#tarefa').val();
-        const novaAtividade = $('<li></li>');
+        const data = $('#data').val();
+        const novaAtividade = $('<li style ="list-style-type: circle"></li>');
         let id = letra + numero.toString();
-        const novaTarefa = `<li id="${id}"><p>${id} | ${atividade}</p></li>`
+        const novaTarefa = `<li id="${id}"><p>${atividade} | ${data}</p></li>`
         $(novaTarefa).appendTo(novaAtividade);
 
         numero++;
@@ -19,19 +20,18 @@ $(document).ready(function(){
 
     })
 
-    /*$('ul').on('click', function() {
-
-        $('li').css("text-decoration", "line-through");
-
-    });
-*/
-    $('ul li').on('click', function() {
+    $('ul').on('click', 'li', function () {
 
         $(this).css("text-decoration", "line-through");
 
     });
 
-
+    $('.cmds').on('click', '#doneall', function () {
+        $('li').css("text-decoration", "line-through");
+    });
+    $('.cmds').on('click', '#resetall', function () {
+        $('li').css("text-decoration", "none");
+    });
 });
 
 
