@@ -19,9 +19,15 @@ $(document).ready(function(){
 
     })
 
-    $('ul').on('click', function() {
+    /*$('ul').on('click', function() {
 
         $('li').css("text-decoration", "line-through");
+
+    });
+*/
+    $('ul li').on('click', function() {
+
+        $(this).css("text-decoration", "line-through");
 
     });
 
