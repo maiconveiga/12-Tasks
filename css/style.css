@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(236, 235, 235);
+    width: 100%;
+    padding: 0;
+}
+
+.container{
+    margin-top: 100px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+form{
+    text-align: center;
+    margin-bottom: 50px;
+}
+form > input, button{
+    padding: 10px;
+}
+button{
+    font-weight: bold;
+}
+button:hover{
+    background-color: black;
+    color: rgb(236, 235, 235);;
+}
+.listContainer{
+    margin: 0 auto;
+}
+ul{
+    text-align: left;
+    margin-left: 35%;
+    
+}
+
